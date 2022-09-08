@@ -5,7 +5,6 @@ let num2 = '';
 let operator = '';
 let sum = '';
 let resetScreen = false;
-let equal = '';
 
 //Calculator buttons
 const calculator = document.querySelector(".calculator");
