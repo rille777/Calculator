@@ -1,0 +1,91 @@
+/*   Sets margin and padding of every HTML element to zero */
+
+*, 
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.calc-main {      /* calc-main will be the parent and calculator will be child */
+  display: flex; 
+  justify-content: center;
+  align-items: center;  /* This one will be necessary for word break and word wrap */
+  margin-top: 100px;
+  height: 75vh;       /* This one will be necessary for word break and word wrap */
+}
+
+.calculator {
+  width: 400px;
+  border: 2px black solid;
+  background-color: grey;
+  border-radius: 15px;
+  padding: 20px;
+  }
+
+  .calc-screen {
+  padding: 10px 20px;
+  border: 2px black solid;
+  margin-bottom: 20px;
+  background-color: rgb(216, 211, 211);
+  text-align: right;
+  word-wrap: break-word; /* Allow long words to be able to break and wrap onto the next line  */
+  word-break: break-all; /* without this the numbers will continue outside the screen to the right side */
+  }
+
+  .previous-value {
+    min-height: 30px;
+    font-size: 25px;
+  }
+  
+  .current-value {
+    min-height: 30px;
+    font-size: 50px;
+  }
+
+
+.calc-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.remove {
+  grid-column: span 2;
+}
+
+.btn {
+  padding: 20px;
+  border: 2px black solid;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 15px;
+}
+
+.ac {
+  background-color: tomato;
+}
+
+.delete {
+  background-color: lightseagreen;
+  font-size: x-large;
+}
+
+.operator {
+  background-color: lightskyblue;
+}
+
+.equal {
+  background-color: lightpink;
+}
+
+.dot {
+  background-color: lightgreen;
+}
+
+.btn:hover {
+  background-color: grey;
+}
+
